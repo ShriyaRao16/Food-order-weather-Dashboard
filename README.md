@@ -54,7 +54,7 @@ A Streamlit web application that analyzes the correlation between weather condit
    ```
 
 5. **Open your browser**
-   - The app will automatically open at `http://localhost:8501`
+   - The app will automatically open at `https://food-order-weather-dashboard-mrkfvvocueqdxwjthycz9t.streamlit.app/`
    - If not, navigate to the URL shown in your terminal
 
 ## 📊 How It Works
@@ -150,5 +150,6 @@ If you encounter any issues or have questions:
 3. Include error messages and steps to reproduce
 
 ---
+
 
 **Made with ❤️ using Kiro IDE and Streamlit**
