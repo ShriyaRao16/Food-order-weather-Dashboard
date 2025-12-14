@@ -1,133 +1,154 @@
-# Food-Order-Weather-Analysis
+# 🍔 Food Orders vs Weather Dashboard
 
-Weather Impact on Food Orders Dashboard
-A data visualization dashboard that explores the correlation between weather conditions and food ordering behavior by combining  weather data with Zomato-style order data.
-# Project Overview
-This project merges up two unrelated data sources:<br>
-•Weather Data: Historical temperature and precipitation data from Open-Meteo API<br>
-•Food Orders: Synthetic Zomato order dataset for Indian cities<br>
+A Streamlit web application that analyzes the correlation between weather conditions and food ordering patterns using synthetic Zomato-style data and real-time weather information.
 
-The dashboard reveals interesting patterns like how rainy days impact food delivery orders and how temperature correlates with ordering behavior.<br>
-# Features
-Interactive city selection (Bengaluru, Mumbai, Delhi, Chennai)<br>
-📅 Custom date range filtering<br>
-📈 Dual-axis visualization: Orders vs Temperature<br>
-🌧️ Rain impact analysis with comparative bar charts<br>
-🔍 Dynamic insights and statistical analysis<br>
-⚡ Real-time historical weather data fetching<br>
-# Tech Stack
-➣Frontend: Streamlit<br>
-➣Data Processing: Pandas<br>
-➣Visualization: Matplotlib<br>
-➣API: Open-Meteo Historical Weather API<br>
-➣Language: Python 3.8+<br>
-# 📦 Installation
-## Prerequisites
+![Dashboard Preview](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
+## 🌟 Features
+
+- **Multi-City Analysis**: Compare food ordering patterns across Bengaluru, Mumbai, Delhi, and Chennai
+- **Interactive Date Selection**: Analyze custom date ranges with real-time validation
+- **Weather Integration**: Fetches historical weather data using Open-Meteo API
+- **Visual Analytics**: 
+  - Line charts showing daily orders vs temperature trends
+  - Bar charts comparing rainy vs non-rainy day ordering patterns
+- **Smart Insights**: Automated calculation of weather impact on ordering behavior
+- **Error Handling**: Graceful handling of missing data and API failures
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.7 or higher
+- Internet connection (for weather data)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/food-weather-dashboard.git
+   cd food-weather-dashboard
+   ```
+
+2. **Set up virtual environment**
+   ```bash
+   python -m venv .venv
+   
+   # On Windows
+   .venv\Scripts\activate
+   
+   # On macOS/Linux
+   source .venv/bin/activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the application**
+   ```bash
+   streamlit run app.py
+   ```
+
+5. **Open your browser**
+   - The app will automatically open at `http://localhost:8501`
+   - If not, navigate to the URL shown in your terminal
+
+## 📊 How It Works
+
+1. **Select a City**: Choose from four major Indian cities
+2. **Pick Date Range**: Select start and end dates for analysis
+3. **View Insights**: Explore visualizations and automated insights
+4. **Analyze Patterns**: Understand how weather affects food ordering
+
+## 🏗️ Project Structure
+
+```
+food-weather-dashboard/
+├── .kiro/                    # Kiro IDE specifications
+│   └── specs/
+│       └── weather-dashboard/
+│           ├── requirements.md
+│           ├── design.md
+│           └── tasks.md
+├── app.py                    # Main Streamlit application
+├── util.py                   # Weather API integration
+├── zomato_orders_2025.csv    # Sample order data
+├── requirements.txt          # Python dependencies
+└── README.md                # This file
+```
+
+## 🔧 Technical Details
+
+### Data Sources
+- **Order Data**: Synthetic CSV data mimicking Zomato-style food orders
+- **Weather Data**: Historical weather from [Open-Meteo API](https://open-meteo.com/)
+
+### Key Technologies
+- **Streamlit**: Web application framework
+- **Pandas**: Data manipulation and analysis
+- **Matplotlib**: Data visualization
+- **Requests**: HTTP API integration
+
+### API Integration
+The application uses the Open-Meteo Archive API for historical weather data:
+- No API key required
+- Supports historical data from 1940 onwards
+- Provides temperature and precipitation data
+
+## 📈 Sample Insights
+
+The dashboard automatically generates insights such as:
+- "🌧️ Food orders increase by 15.3% on rainy days"
+- "🌡️ Average temperature: 24.5°C"
+- "📦 Total orders in period: 1,247"
+
+## 🛠️ Development
+
+This project was developed using Kiro IDE's spec-driven development methodology. The complete development process is documented in the `.kiro/specs/` directory, including:
+
+- **Requirements**: Detailed user stories and acceptance criteria
+- **Design**: System architecture and correctness properties
+- **Tasks**: Step-by-step implementation plan
+
+### Running Tests
 
 ```bash
-python 3.8+
-pip
+# Install test dependencies
+pip install pytest hypothesis
+
+# Run tests
+pytest tests/
 ```
 
-## Setup
+## 🤝 Contributing
 
-```bash
-git clone https://github.com/ShriyaRao16/Food-Order-Weather-Analysis.git
-cd Food-Order-Weather-Analysis
-```
-## Create virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Install dependencies
-```bash
-pip install -r requirements.txt
-```
-## Usage
-```bash
-#Run the dashboard
-streamlit run app.py
-```
-The dashboard will open in your browser at 
+## 📝 License
 
-🔗 [Food Order vs Weather Dashboard](https://food-order-weather-dashboard-mrkfvvocueqdxwjthycz9t.streamlit.app/)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# How to Use:
-1.)Select a city from the dropdown<br>
-2.)Choose your date range<br>
-3.)View visualizations and insights<br>
-4.)Analyze weather impact on food orders<br>
+## 🙏 Acknowledgments
 
- ## Project Structure
- ```md
-weather-food-orders-dashboard/
-├── .kiro/
-│   └── (Kiro AI assistant cache)
-├── app.py
-│   └── Main Streamlit dashboard
-├── util.py
-│   └── Weather data fetching utilities
-├── zomato_orders_2025.csv
-│   └── Sample orders dataset
-├── requirements.txt
-│   └── Python dependencies
-├── README.md
-   └── Project documentation
-```
-# Data Sources
-1. Weather Data (Open-Meteo API)
+- [Open-Meteo](https://open-meteo.com/) for providing free weather data API
+- [Streamlit](https://streamlit.io/) for the excellent web app framework
+- Sample data inspired by food delivery platforms like Zomato
 
-•Source: Open-Meteo Archive API<br>
-•Data: Historical temperature and precipitation<br>
-•Coverage: 1940 to present<br>
-•Update Frequency: Daily<br>
+## 📞 Support
 
-2. Food Orders Data
+If you encounter any issues or have questions:
+1. Check the [Issues](https://github.com/yourusername/food-weather-dashboard/issues) page
+2. Create a new issue with detailed description
+3. Include error messages and steps to reproduce
 
-•Source: Synthetic dataset (Zomato-style)<br>
-•Fields: order_date, order_id, restaurant, customer<br>
-•Period: January - December 2025<br>
-•Cities: Bengaluru, Mumbai, Delhi, Chennai<br>
-# Key Insights
-Based on our analysis:
+---
 
-•🌧️ Food orders tend to increase by 10-15% on rainy days<br>
-•🌡️ Moderate temperatures (20-25°C) correlate with higher ordering activity<br>
-•📈 Weather conditions have a measurable impact on customer behavior<br>
-•🏙️ Pattern varies by city due to different climate conditions<br>
-
-# How Kiro Accelerated Development
-This project was built with assistance from Kiro AI:
-
-➣Rapid prototyping of data visualization logic<br>
-➣Quick debugging of API integration issues<br>
-➣Code optimization and best practices<br>
-➣UI/UX improvements and error handling<br>
-
-Read the full blog post: [Link to AWS Builder Center Blog]
-
-# 📸 Screenshots
-<img width="921" height="784" alt="image" src="https://github.com/user-attachments/assets/9406d78c-bbf8-4213-bfd8-3e0ea2cb3e76" />
-<img width="905" height="675" alt="image" src="https://github.com/user-attachments/assets/03bb08f4-f3ce-4a9a-ac46-c671f29ebd4f" />
-<img width="930" height="425" alt="image" src="https://github.com/user-attachments/assets/954ec95c-6342-4b62-9f89-3c444a3696b0" />
-
-
-
-
-# Future Enhancements
-·Add more cities and weather parameters<br>
-·Implement machine learning predictions<br>
-·Add real-time weather updates<br>
-·Include more order metrics (revenue, cuisine types)<br>
-·Add export functionality for reports<br>
-
- # Acknowledgments
-✦Open-Meteo for providing free historical weather data API<br>
-✦Streamlit for the amazing dashboard framework<br>
-✦AI for Bharat for organizing this workshop<br>
-✦Kiro AI for accelerating the development process<br>
-
-
+**Made with ❤️ using Kiro IDE and Streamlit**

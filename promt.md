@@ -1,0 +1,16 @@
+## Prompts Used
+
+- "Generate a synthetic Zomato food orders dataset for the full year 2025 with order dates and customer IDs"
+- "Create a Streamlit dashboard that compares food orders with weather data"
+- "Design a clean project folder structure for a Python dashboard application"
+- "Help me integrate weather data with daily food order counts"
+- "Write a Python function to fetch weather data using a public API"
+- "Generate synthetic weather data for a full year when API data is unavailable"
+- "Help debug a Streamlit IndexError caused by an empty DataFrame"
+- "Explain why rain impact analysis is failing in my dashboard"
+- "Improve the visualization of food orders vs temperature in Streamlit"
+- "Add error handling in Streamlit when data is missing"
+- "Guide me on how to structure .kiro documentation for an AI-assisted project"
+- "Explain how to prepare a project for GitHub submission with required files"
+- "Help write a README file for my dashboard project"
+- "Explain how to write a technical blog post for AWS Builder Center"
