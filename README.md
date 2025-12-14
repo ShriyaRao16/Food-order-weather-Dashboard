@@ -110,11 +110,12 @@ This project was built with assistance from Kiro AI:
 Read the full blog post: [Link to AWS Builder Center Blog]
 
 # 📸 Screenshots
-<img width="935" height="797" alt="image" src="https://github.com/user-attachments/assets/181b00f2-33cf-42f8-b742-80179f9edf6d" /><br>
+<img width="921" height="784" alt="image" src="https://github.com/user-attachments/assets/9406d78c-bbf8-4213-bfd8-3e0ea2cb3e76" />
+<img width="905" height="675" alt="image" src="https://github.com/user-attachments/assets/03bb08f4-f3ce-4a9a-ac46-c671f29ebd4f" />
+<img width="930" height="425" alt="image" src="https://github.com/user-attachments/assets/954ec95c-6342-4b62-9f89-3c444a3696b0" />
 
-<img width="921" height="663" alt="image" src="https://github.com/user-attachments/assets/bc37f89b-d7fc-45f1-8df7-7b5810240d40" />
 
-<img width="888" height="412" alt="image" src="https://github.com/user-attachments/assets/36b5c367-27ec-4bc6-8575-ebf9b0ff8f07" />
+
 
 # Future Enhancements
 ·Add more cities and weather parameters<br>
