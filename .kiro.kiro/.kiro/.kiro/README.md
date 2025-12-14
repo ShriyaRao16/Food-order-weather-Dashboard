@@ -1,1 +1,0 @@
-Kiro documentation folder
