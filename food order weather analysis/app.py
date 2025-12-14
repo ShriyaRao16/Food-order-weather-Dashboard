@@ -1,8 +1,13 @@
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 from util import get_weather_data
+
+
+BASE_DIR = Path(__file__).parent
+DATA_PATH = BASE_DIR / "zomato_orders_2025.csv"
 
 st.set_page_config(
     page_title="Food Orders vs Weather Dashboard",
@@ -21,8 +26,8 @@ city = st.selectbox(
 )
 
 try:
-    # Load orders data
-    orders_df = pd.read_csv("zomato_orders_2025.csv")
+    orders_df = pd.read_csv(DATA_PATH)
+
     
     # Aggregate to daily orders
     daily_orders = orders_df.groupby("order_date").size().reset_index(name="orders")
@@ -151,4 +156,5 @@ except FileNotFoundError:
 except Exception as e:
     st.error(f"❌ An error occurred: {str(e)}")
     import traceback
+
     st.code(traceback.format_exc())
