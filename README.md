@@ -51,7 +51,9 @@ pip install -r requirements.txt
 #Run the dashboard
 streamlit run app.py
 ```
-The dashboard will open in your browser at :<br>
+The dashboard will open in your browser at 
+
+🔗 [Food Order vs Weather Dashboard](https://food-order-weather-dashboard-mrkfvvocueqdxwjthycz9t.streamlit.app/)
 
 # How to Use:
 1.)Select a city from the dropdown<br>
